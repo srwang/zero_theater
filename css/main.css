@@ -1,0 +1,10 @@
+html {
+	margin: 40px 150px;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4.5em;
+	padding: 20px;
+}
