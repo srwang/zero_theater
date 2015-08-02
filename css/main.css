@@ -1,10 +1,144 @@
-html {
-	margin: 40px 150px;
+.clearfix:after, .clearfix:before {
+	content: ' ';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
 }
 
-h1 {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 4.5em;
+* {
+	box-sizing: border-box;
+	font-family: 'Slabo 27px', sans-serif;
+	color: rgba(78, 45, 86, 0.85);
+	line-height: 110%;
+}
+
+body {
+	margin: 20px 200px;
+	background-color: rgba(252, 252, 252, 0.30);
+}
+
+a:link, a:hover, a:visited {
+	text-decoration: none;
+}
+
+#project-archives:hover {
+	cursor: pointer;
+}
+
+/*header */
+header, .wrapper {
+	background-color: white;
+}
+
+header {
+	border: 1px dashed rgb(182, 182, 182);
+	height: 150px;
+	width: 100%;
+	padding: 7px;
+	margin-left: 0%;
+}
+
+#header-inner-box {
+	height: 145px;
+	background-color: hsla(231, 5%, 60%, 0.27);
+	-webkit-box-shadow: inset 10px 9px 52px 17px rgba(235,218,235,1);
+	-moz-box-shadow: inset 10px 9px 52px 17px rgba(235,218,235,1);
+	box-shadow: inset 10px 9px 52px 17px rgba(235,218,235,1);
+}
+
+header h1 {
+	color: white;
+	position: relative;
+	top: 20px;
+	left: 5%;
+/*	text-transform: uppercase;*/
+	font-size: 3.5em;
+	font-weight: 500;
+	padding: 20px;	
+	margin: 0;
+}
+
+/*nav*/
+nav {
+	text-align: right;
+	position: fixed;
+	left: 12%;
+	font-size: 1.3em;
+	line-height: 200%;
+	margin-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 5px lightblue solid;
+}
+
+ul {
+	display: none;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+	font-size: 0.7em;
+}
+
+/*bulk of content*/
+#content-box {
+	clear: both;
+	float: right;
+	position: relative;
+	border: 1px rgb(182, 182, 182) dashed;
+	margin-top: 15px;
+	padding: 7px;
+}
+
+.wrapper {
+	padding: 5px 30px;
+	margin: 7px 0px;
+}
+
+#contact {
+	background-color: rgb(253, 253, 253);
+}
+
+p {
+	clear: both;
+	font-size: 1.2em;
+	margin: 10px 0px 0px 0px;
+}
+
+#content-box-inner {
+	border: 1px solid rgb(202, 202, 202);
 	padding: 20px;
 }
+
+h2 {
+	font-size: 1.5em;
+}
+
+img {
+	padding: 3px 3px;
+}
+
+/*sample project page*/
+.document {
+ 	float: left;
+ 	padding-right: 20px;
+ 	padding: 5px 10px 20px 0px;
+ }
+
+ .tags {
+ 	font-size: 1em;
+ }
+
+ /*map*/ 
+ #map-canvas { 
+ 	height: 500px;
+ 	width: 100%; 
+ 	margin: 0; 
+ 	padding: 0;
+ }
+
+ .index {
+ 	color: gray;
+ }
